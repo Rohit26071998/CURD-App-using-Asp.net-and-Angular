@@ -1,0 +1,45 @@
+
+<div class="d-flex flex-row bd-highlight mb-3">
+
+  <div class="form-froup row" style="width: 60%;">
+
+      <label class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="Name"placeholder="Enter Student Name">
+      </div>
+      <label class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="Branch"placeholder="Enter the Branch">
+      </div>
+      <label class="col-sm-2 col-form-label">DOB</label>
+      <div class="col-sm-10">
+          <input type="date"  [(ngModel)]="DOB">
+      </div>
+      <label class="col-sm-2 col-form-label">Mobile Number</label>
+      <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="MobileNo"placeholder="Enter Mobile Number">
+      </div>
+      <label class="col-sm-2 col-form-label">Address</label>
+      <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="Address"placeholder="Enter the Address">
+      </div>
+      <label class="col-sm-2 col-form-label">State</label>
+      <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="State"placeholder="Enter the State">
+      </div>
+      <label class="col-sm-2 col-form-label">Pincode</label>
+      <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="Pincode"placeholder="Enter the Pincode ">
+      </div>
+  </div>
+
+  </div>
+
+
+  <button (click)="addStudents()" *ngIf="stu.SNo==0" class="m-1 btn btn-success">
+      Add New Student
+  </button>
+
+  <button (click)="updateStudents()" *ngIf="stu.SNo!=0" class="m-1 btn btn-success">
+      Update Student
+  </button>
